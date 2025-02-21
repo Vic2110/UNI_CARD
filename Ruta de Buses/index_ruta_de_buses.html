@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rutas de Buses - UNDC Card App</title>
+  <!-- Enlazamos el CSS global -->
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* Estilos específicos para el recuadro de rutas de buses */
+    .buses-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff; /* Fondo blanco */
+      color: #333;            /* Texto oscuro */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    /* Botón de volver (si no se define ya en el global) */
+    .volver-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 0.8em;
+      background-color: #0D47A1;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+    .volver-btn:hover {
+      background-color: #06357b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rutas de Buses</h1>
+  </header>
+  
+  <!-- Contenedor principal para el recuadro blanco de buses -->
+  <div class="buses-container">
+    <p><strong>Rutas Principales:</strong> Mala, Chincha, Quilmaná, Lunahuaná</p>
+    <p><strong>Horario de Mañana:</strong> 7:00 AM</p>
+    <p><strong>Horario de Tarde:</strong> 6:00 PM</p>
+    <p><strong>Rutas Adicionales:</strong> Imperial, Quilmaná</p>
+    <p><strong>Ruta Imperial:</strong> 8:00 AM, 12:00 PM, 4:00 PM</p>
+    <p><strong>Ruta Quilmaná:</strong> 9:00 AM, 1:00 PM, 5:00 PM</p>
+  </div>
+  
+  <!-- Botón para volver al inicio -->
+  <button onclick="location.href='../index_menu_principal.html'" class="volver-btn">← Volver al inicio</button>
+</body>
+</html>
+

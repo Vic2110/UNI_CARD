@@ -1,0 +1,82 @@
+:root {
+  /* Paleta de colores basada en el escudo de la universidad */
+  --color-verde: #007b3e;       /* Verde principal */
+  --color-azul: #0D47A1;        /* Azul marino */
+  --color-blanco: #FFFFFF;      /* Blanco */
+  --color-gris-texto: #333333;  /* Gris oscuro para texto */
+  --color-azul-oscuro: #06357b; /* Azul más oscuro para hover */
+}
+
+/* Fondo degradado verde-azul */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, var(--color-verde), var(--color-azul));
+  color: var(--color-blanco);
+  min-height: 100vh;
+}
+
+/* Título principal (header) */
+.carnet-title {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Contenedor que centra la "tarjeta" del carnet */
+.carnet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Tarjeta del carnet */
+.carnet-content {
+  background-color: var(--color-blanco);
+  color: var(--color-gris-texto);
+  width: 300px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Subtítulo de la tarjeta */
+.carnet-subtitle {
+  margin: 0.5rem 0 1rem;
+  color: #555;
+}
+
+/* Sección del QR */
+.qr-section {
+  margin-bottom: 1rem;
+}
+
+.qr-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón de volver al inicio */
+.volver-btn {
+  display: block;
+  width: 200px;
+  margin: 1.5rem auto;
+  padding: 0.8em;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.volver-btn:hover {
+  background-color: var(--color-azul-oscuro);
+}

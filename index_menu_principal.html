@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNDC Card App - Menú Principal</title>
+  <!-- Fuente opcional -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Enlace a la hoja de estilos global -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Puedes agregar estilos específicos para el menú si lo deseas -->
+  <style>
+    /* Estilos específicos para el menú principal */
+    .menu-container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .menu-container h2 {
+      margin-bottom: 1rem;
+      color: var(--color-azul); /* o el color que prefieras de la paleta */
+    }
+    .menu-container .button {
+      display: block;
+      width: 80%;
+      margin: 0.8rem auto;
+      padding: 0.8rem;
+      background-color: var(--color-verde);
+      color: var(--color-blanco);
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .menu-container .button:hover {
+      background-color: #005a2d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Se muestra el menú principal después de iniciar sesión -->
+  <header>
+    <h1 class="main-title">UNDC Card App</h1>
+  </header>
+  
+  <div class="menu-container">
+    <h2>Menú Principal</h2>
+    <!-- Cada botón dirige a la sección correspondiente -->
+    <a class="button" href="Mi perfil/index_mi_perfil.html">Mi Perfil</a>
+    <a class="button" href="Mi carnet/index_mi_carnet.html">Mi Carnet</a>
+    <a class="button" href="Mi horario/index_horario.html">Horario</a>
+    <a class="button" href="Asistencia/index_asistencia.html">Asistencia</a>
+    <a class="button" href="Ruta de Buses/index_ruta_de_buses.html">Buses</a>
+    <a class="button" href="Calculadora de notas/index_calculadora.html">Calculadora de Notas</a>
+  </div>
+  
+  <!-- Puedes incluir un botón de cerrar sesión si lo requieres -->
+  <button onclick="location.href='index.html'" class="volver-btn">Cerrar Sesión</button>
+</body>
+</html>

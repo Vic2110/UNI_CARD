@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Carnet - UNDC Card App</title>
+  <!-- Hoja de estilos específica del carnet -->
+  <link rel="stylesheet" href="carnet.css" />
+</head>
+<body>
+  <header>
+    <h1 class="carnet-title">Mi Carnet</h1>
+  </header>
+  
+  <div class="carnet-container">
+    <div class="carnet-content">
+      <h2 class="carnet-subtitle">Carnet Universitario</h2>
+      <div class="qr-section">
+        <!-- QR dinámico (en producción, cada alumno tendría su propio código) -->
+        <img 
+          src="https://api.qrserver.com/v1/create-qr-code/?data=2201010247&size=150x150" 
+          alt="QR de Carnet" 
+          class="qr-image"
+        />
+        <p>QR registrado para localizar al alumno en la base de datos.</p>
+      </div>
+      <p><strong>Código de Estudiante:</strong> 2201010247</p>
+      <p><strong>Estado:</strong> Activo</p>
+    </div>
+  </div>
+  
+  <!-- Botón para volver al inicio -->
+  <button onclick="location.href='../index_menu_principal.html'" class="volver-btn">← Volver al inicio</button>
+</body>
+</html>
+

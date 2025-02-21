@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horario - UNDC Card App</title>
+  <!-- Enlazamos el CSS global -->
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .schedule-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff; /* Fondo blanco */
+      color: #333;            /* Texto oscuro para contraste */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    /* Opcional: Estilos para el botón de volver */
+    .volver-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 0.8em;
+      background-color: #0D47A1;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+    .volver-btn:hover {
+      background-color: #06357b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Horario</h1>
+  </header>
+  
+  <!-- Contenedor principal para el recuadro blanco del horario -->
+  <div class="schedule-container">
+    <h2>Mis Cursos</h2>
+    <p><strong>Lunes:</strong> 8:00 AM - 10:00 AM - Programación</p>
+    <p><strong>Martes:</strong> 10:30 AM - 12:30 PM - Algoritmos y Estructuras</p>
+    <p><strong>Miércoles:</strong> 1:00 PM - 3:00 PM - Bases de Datos</p>
+    <p><strong>Jueves:</strong> 9:00 AM - 11:00 AM - Redes de Computadoras</p>
+    <p><strong>Viernes:</strong> 11:30 AM - 1:30 PM - Inteligencia Artificial</p>
+  </div>
+  
+  <!-- Botón para volver al inicio -->
+  <button onclick="location.href='../index_menu_principal.html'" class="volver-btn">← Volver al inicio</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNDC Card App - Inicio</title>
+  <!-- Fuente Google opcional -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>UNDC Card App</h1>
+  </header>
+  
+
+  <!-- Sección de inicio de sesión -->
+  <div class="login-container" id="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form id="login-form">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Sección de menú principal (oculta por defecto) -->
+  <div class="container" id="main-menu" style="display: none;">
+    <a class="button" href="Mi perfil/index_mi_perfil.html">Mi Perfil</a>
+    <a class="button" href="Mi carnet/index_mi_carnet.html">Mi Carnet</a>
+    <a class="button" href="Mi horario/index_horario.html">Horario</a>
+    <a class="button" href="Asistencia/index_asistencia.html">Asistencia</a>
+    <a class="button" href="Ruta de Buses/index_ruta_de_buses.html">Buses</a>
+    <a class="button" href="Calculadora de notas/index_calculadora.html">Calculadora de Notas</a>
+  </div>
+
+  <!-- Script global -->
+  <script src="script.js"></script>
+</body>
+</html>
